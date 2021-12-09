@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+            }
+            .header {
+                width: 375px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 20px;
+            }
+            .search {
+                font-family: 'Comfortaa', cursive;
+                margin: 32px 16px;
+            }
+            .input{
+                box-sizing: border-box;
+                margin: 0px 16px;
+                height: 52px;
+                border: 2px solid black;
+            }
+            .results{
+                font-family: 'Roboto', sans-serif;
+                margin: 32px 0px 13px 16px;
+            }
+            .images{
+                width: 107px;
+                height: 107px;
+            }
+            .dogs{
+                display: grid;
+                grid-template-columns: repeat(3, 107px);
+                grid-auto-rows: 107px;
+                grid-gap: 11px;
+            }
+            .button{
+                font-family: 'Roboto', sans-serif;
+                text-align: center;
+                width: 343px;
+                height: 52px;
+                margin: 43px 16px 32px;
+                border: 2px solid black;
+                background-color: white;
+                border-radius: 6px;
+            }
+            .button:hover{
+                background-color: lightgray;
+            }
+            .footer{
+                width: 375px;
+                height: 83px;
+                padding: 9px 11px 34px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .footer_button{
+                width: 40px;
+                height: 40px;
+                border-color: transparent;
+                background-color: transparent;
+                border-radius: 30px;
+                align-items: center;
+            }
+            .footer_button:hover{
+                background-color: lightgray;
+            }
+            .footer_button_plus{
+                width: 70px;
+                height: 40px;
+                border-radius: 20px;
+                border-color: transparent;
+                background-image: linear-gradient(202.17deg, #FF00D6 8.58%, #FF4D00 91.42%);
+            }
+            .footer_button_plus:hover{
+                background-image:unset;
+            }
+            .footer_button_home{
+                width: 16px;
+                height: 16px;
+            }
+            .footer_button_search{
+                width: 20px;
+                height: 20px;
+            }
+            .footer_button_plus_image{
+                width: 13px;
+                height: 13px;
+            }
+            .footer_button_chat{
+                width: 17px;
+                height: 15px;
+            }
+            .footer_button_profile{
+                width: 15px;
+                height: 15px;
+            }
+
+
+            
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_time">
+            09:27</div>
+            <div class="header_icons">
+            <ion-icon name="cellular-outline"></ion-icon>
+            <ion-icon name="wifi-outline"></ion-icon>
+            <ion-icon name="battery-full-outline"></ion-icon></div>
+        </header>
+        <div class="search">
+            <h1>Search</h1>
+        </div>
+        <input class="input">
+        <div class="results">
+            ALL RESULTS
+        </div>
+        <div class="dogs">
+            <img class="image1 images" src="dog_1.jpg" alt="dog face">
+            <img class="image2 images" src="dog_1.jpg" alt="dog face">
+            <img class="image3 images" src="dog_1.jpg" alt="dog face">
+            <img class="image4 images" src="dog_1.jpg" alt="dog face">
+            <img class="image5 images" src="dog_1.jpg" alt="dog face">
+            <img class="image6 images" src="dog_1.jpg" alt="dog face">
+            <img class="image7 images" src="dog_1.jpg" alt="dog face">
+            <img class="image8 images" src="dog_1.jpg" alt="dog face">
+            <img class="image9 images" src="dog_1.jpg" alt="dog face">
+            <img class="image10 images" src="dog_1.jpg" alt="dog face">
+            <img class="image11 images" src="dog_1.jpg" alt="dog face">
+            <img class="image12 images" src="dog_1.jpg" alt="dog face">
+            <img class="image13 images" src="dog_1.jpg" alt="dog face">
+            <img class="image14 images" src="dog_1.jpg" alt="dog face">
+            <img class="image15 images" src="dog_1.jpg" alt="dog face">
+        </div>
+        <button class="button">SEE MORE</button>
+        <footer class="footer">
+            <button class="footer_button">
+                <img class="footer_button_home" src="home.png">
+            </button>
+            <button class="footer_button">
+                <img class="footer_button_search" src="search.png">
+            </button>
+            <button class="footer_button_plus">
+                <img class="footer_button_plus_image" src="plus.png">
+            </button>
+            <button class="footer_button">
+                <img class="footer_button_chat" src="chat.png">
+            </button>
+            <button class="footer_button">
+                <img class="footer_button_profile" src="profile.png">
+            </button>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
